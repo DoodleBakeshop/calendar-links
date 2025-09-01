@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar & To-Do App Links</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #F8F8F8;
+        }
+        .container {
+            max-width: 600px;
+        }
+        .btn {
+            /* Adjusted padding to increase button size while maintaining a good aspect ratio */
+            @apply flex items-center justify-center space-x-2 px-12 py-6 rounded-3xl shadow-lg transition-all duration-300;
+        }
+        .btn-apple {
+            background-color: #333333;
+            color: #ffffff;
+        }
+        .btn-outlook {
+            background-color: #0078D4;
+            color: #ffffff;
+        }
+        .btn-google {
+            background-color: #4285F4;
+            color: #ffffff;
+        }
+        .btn-reminders {
+            background-color: #555555;
+            color: #ffffff;
+        }
+        .btn-samsung {
+            background-color: #1255CC;
+            color: #ffffff;
+        }
+        .btn svg {
+            width: 2rem; /* 아이콘 크기를 더 크게 조정 */
+            height: 2rem; /* 아이콘 크기를 더 크게 조정 */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <div class="container bg-white p-8 rounded-3xl shadow-2xl text-center">
+        <!-- 상단 헤더 -->
+        <div class="mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold mb-2 text-gray-800">
+                Calendar & To-Do App Links
+            </h1>
+            <p class="text-gray-500">Tap a button below to connect with your preferred app.</p>
+        </div>
+
+        <!-- 버튼 섹션 -->
+        <div class="space-y-6">
+            <!-- Apple Section -->
+            <div class="space-y-4">
+                <h2 class="text-lg font-regular text-gray-700">For Apple Devices</h2>
+                <a href="calshow://" class="btn btn-apple">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                </a>
+                <a href="x-apple-reminder://reminders" class="btn btn-reminders">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        <path d="M10 2v4"></path>
+                        <path d="M14 2v4"></path>
+                        <path d="M12 10v6"></path>
+                        <path d="M10 12h4"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <hr class="border-gray-300 my-6">
+
+            <!-- Google/Android Section -->
+            <div class="space-y-4">
+                <h2 class="text-lg font-regular text-gray-700">For Google & Android Devices</h2>
+                <a href="https://calendar.google.com/calendar" class="btn btn-google">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        <path d="M10 2v4"></path>
+                        <path d="M14 2v4"></path>
+                        <path d="M12 10v6"></path>
+                        <path d="M10 12h4"></path>
+                    </svg>
+                </a>
+                <a href="https://mail.google.com/tasks/canvas" class="btn btn-google">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        <path d="M10 2v4"></path>
+                        <path d="M14 2v4"></path>
+                        <path d="M12 10v6"></path>
+                        <path d="M10 12h4"></path>
+                    </svg>
+                </a>
+                <a href="samsungcalendar://main" class="btn btn-samsung">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                </a>
+            </div>
+
+            <hr class="border-gray-300 my-6">
+
+            <!-- Outlook Section -->
+            <div class="space-y-4">
+                <h2 class="text-lg font-regular text-gray-700">For Outlook Users</h2>
+                <a href="outlookcal://add" class="btn btn-outlook">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3c3.08 0 5.5 2.42 5.5 5.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- 폰트 저작권 -->
+        <p class="text-xs text-gray-400 mt-8">
+            This page uses the free Pretendard font.
+        </p>
+    </div>
+
+</body>
+</html>
